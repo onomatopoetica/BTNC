@@ -3,7 +3,9 @@
     "name": "startbootstrap-stylish-portfolio",
     "version": "5.0.9",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "node_modules/.bin/gulp watch",
+        "deploy": "gh-pages-deploy",
+        "clean-source": "rimraf README.md src webroot package.json"
     },
     "description": "A stylish portfolio HTML template built with Bootstrap",
     "keywords": [
@@ -36,8 +38,9 @@
         "simple-line-icons": "2.5.5"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.14",
+        "browser-sync": "^2.27.11",
         "del": "6.0.0",
+        "gh-pages-deploy": "^0.5.1",
         "gulp": "4.0.2",
         "gulp-autoprefixer": "7.0.1",
         "gulp-clean-css": "4.3.0",
